@@ -6,17 +6,438 @@ jobs:
     steps:
       - name: Створити проєкт
         run: |
-          echo "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" | base64 -d > p.zip unzip -o p.zip - uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: '17'
-      - name: Прийняти ліцензії Android
-        run: yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null || true
-      - uses: gradle/actions/setup-gradle@v4
-        with:
-          gradle-version: '8.7'
-      - run: gradle assembleDebug --no-daemon
-      - uses: actions/upload-artifact@v4
-        with:
-          name: JiggleWallpaper-apk
-          path: app/build/outputs/apk/debug/app-debug.apk
+          mkdir -p .
+          cat > build.gradle <<'EOF'
+          plugins { id 'com.android.application' version '8.5.2' apply false }
+          EOF
+          mkdir -p .
+          cat > settings.gradle <<'EOF'
+          pluginManagement { repositories { google(); mavenCentral(); gradlePluginPortal() } }
+          dependencyResolutionManagement {
+              repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+              repositories { google(); mavenCentral() }
+          }
+          rootProject.name = "JiggleWallpaper"
+          include ':app'
+          EOF
+          mkdir -p .
+          cat > gradle.properties <<'EOF'
+          org.gradle.jvmargs=-Xmx2g
+          android.nonTransitiveRClass=true
+          EOF
+          mkdir -p app
+          cat > app/build.gradle <<'EOF'
+          plugins { id 'com.android.application' }
+          android {
+              namespace 'app.jiggle'
+              compileSdk 34
+              defaultConfig {
+                  applicationId 'app.jiggle.wallpaper'
+                  minSdk 26
+                  targetSdk 34
+                  versionCode 1
+                  versionName '1.0'
+              }
+              buildTypes { release { minifyEnabled false } }
+              compileOptions {
+                  sourceCompatibility JavaVersion.VERSION_17
+                  targetCompatibility JavaVersion.VERSION_17
+              }
+          }
+          EOF
+          mkdir -p app/src/main
+          cat > app/src/main/AndroidManifest.xml <<'EOF'
+          <?xml version="1.0" encoding="utf-8"?>
+          <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+              <uses-feature android:name="android.software.live_wallpaper" android:required="true" />
+              <application android:label="@string/app_name" android:icon="@android:drawable/sym_def_app_icon">
+                  <activity android:name=".MainActivity" android:exported="true"
+                      android:theme="@android:style/Theme.Material.NoActionBar">
+                      <intent-filter>
+                          <action android:name="android.intent.action.MAIN" />
+                          <category android:name="android.intent.category.LAUNCHER" />
+                      </intent-filter>
+                  </activity>
+                  <service android:name=".JiggleService" android:exported="true"
+                      android:label="@string/app_name"
+                      android:permission="android.permission.BIND_WALLPAPER">
+                      <intent-filter>
+                          <action android:name="android.service.wallpaper.WallpaperService" />
+                      </intent-filter>
+                      <meta-data android:name="android.service.wallpaper" android:resource="@xml/wallpaper" />
+                  </service>
+              </application>
+          </manifest>
+          EOF
+          mkdir -p app/src/main/res/xml
+          cat > app/src/main/res/xml/wallpaper.xml <<'EOF'
+          <?xml version="1.0" encoding="utf-8"?>
+          <wallpaper xmlns:android="http://schemas.android.com/apk/res/android"
+              android:thumbnail="@android:drawable/sym_def_app_icon"
+              android:description="@string/desc"
+              android:settingsActivity="app.jiggle.MainActivity" />
+          EOF
+          mkdir -p app/src/main/res/values
+          cat > app/src/main/res/values/strings.xml <<'EOF'
+          <?xml version="1.0" encoding="utf-8"?>
+          <resources>
+              <string name="app_name">Живі шпалери</string>
+              <string name="desc">Шпалери з пружинними колами та паралаксом від гіроскопа</string>
+          </resources>
+          EOF
+          mkdir -p app/src/main/java/app/jiggle
+          cat > app/src/main/java/app/jiggle/Cfg.java <<'EOF'
+          package app.jiggle;
+
+          import android.content.Context;
+          import android.content.SharedPreferences;
+          import android.graphics.Bitmap;
+          import android.graphics.BitmapFactory;
+          import android.graphics.Canvas;
+          import android.graphics.Matrix;
+          import android.graphics.Paint;
+          import java.io.File;
+          import java.util.ArrayList;
+          import java.util.List;
+
+          final class Cfg {
+              static class C {
+                  float x, y, r;
+                  C(float x, float y, float r) { this.x = x; this.y = y; this.r = r; }
+              }
+
+              static SharedPreferences sp(Context c) { return c.getSharedPreferences("cfg", 0); }
+
+              static List<C> circles(Context c) {
+                  List<C> l = new ArrayList<>();
+                  String s = sp(c).getString("c", "");
+                  if (s.isEmpty()) return l;
+                  for (String p : s.split(";")) {
+                      String[] a = p.split(",");
+                      if (a.length == 3) {
+                          try { l.add(new C(Float.parseFloat(a[0]), Float.parseFloat(a[1]), Float.parseFloat(a[2]))); }
+                          catch (Exception e) { }
+                      }
+                  }
+                  return l;
+              }
+
+              static void save(Context c, List<C> l) {
+                  StringBuilder b = new StringBuilder();
+                  for (C k : l) {
+                      if (b.length() > 0) b.append(';');
+                      b.append(k.x).append(',').append(k.y).append(',').append(k.r);
+                  }
+                  sp(c).edit().putString("c", b.toString()).apply();
+              }
+
+              static File img(Context c) { return new File(c.getFilesDir(), "wall.jpg"); }
+
+              /** Фото, обрізане "cover" під розмір W x H. */
+              static Bitmap cover(Context c, int W, int H) {
+                  File f = img(c);
+                  if (!f.exists() || W <= 0 || H <= 0) return null;
+                  BitmapFactory.Options o = new BitmapFactory.Options();
+                  o.inJustDecodeBounds = true;
+                  BitmapFactory.decodeFile(f.getPath(), o);
+                  int ss = 1;
+                  while (o.outWidth / (ss * 2) >= W && o.outHeight / (ss * 2) >= H) ss *= 2;
+                  o = new BitmapFactory.Options();
+                  o.inSampleSize = ss;
+                  Bitmap b = BitmapFactory.decodeFile(f.getPath(), o);
+                  if (b == null) return null;
+                  float s = Math.max((float) W / b.getWidth(), (float) H / b.getHeight());
+                  Bitmap out = Bitmap.createBitmap(W, H, Bitmap.Config.ARGB_8888);
+                  Canvas cv = new Canvas(out);
+                  Matrix m = new Matrix();
+                  m.postScale(s, s);
+                  m.postTranslate((W - b.getWidth() * s) / 2f, (H - b.getHeight() * s) / 2f);
+                  cv.drawBitmap(b, m, new Paint(Paint.FILTER_BITMAP_FLAG));
+                  b.recycle();
+                  return out;
+              }
+          }
+          EOF
+          mkdir -p app/src/main/java/app/jiggle
+          cat > app/src/main/java/app/jiggle/EditorView.java <<'EOF'
+          package app.jiggle;
+
+          import android.content.Context;
+          import android.graphics.Bitmap;
+          import android.graphics.Canvas;
+          import android.graphics.Paint;
+          import android.util.DisplayMetrics;
+          import android.view.MotionEvent;
+          import android.view.View;
+          import java.util.List;
+
+          class EditorView extends View {
+              Bitmap bmp;
+              List<Cfg.C> cs;
+              int sel = -1, drag = -1;
+              float defR = 0.2f;
+              boolean pend;
+              float x0, y0;
+              Runnable onSel;
+              final Paint pr = new Paint(Paint.ANTI_ALIAS_FLAG);
+              final Paint bp = new Paint(Paint.FILTER_BITMAP_FLAG);
+              final Paint tx = new Paint(Paint.ANTI_ALIAS_FLAG);
+              final float dp;
+
+              EditorView(Context c) {
+                  super(c);
+                  dp = c.getResources().getDisplayMetrics().density;
+                  cs = Cfg.circles(c);
+                  pr.setStyle(Paint.Style.STROKE);
+                  tx.setColor(0xFFAAAAAA);
+                  tx.setTextAlign(Paint.Align.CENTER);
+                  tx.setTextSize(16 * dp);
+              }
+
+              void reload() {
+                  bmp = Cfg.cover(getContext(), getWidth(), getHeight());
+                  invalidate();
+              }
+
+              @Override protected void onSizeChanged(int w, int h, int ow, int oh) { reload(); }
+
+              @Override protected void onMeasure(int wm, int hm) {
+                  int w0 = MeasureSpec.getSize(wm), h0 = MeasureSpec.getSize(hm);
+                  DisplayMetrics dm = getResources().getDisplayMetrics();
+                  float ratio = (float) dm.heightPixels / dm.widthPixels;
+                  int w, h;
+                  if (w0 * ratio <= h0) { w = w0; h = (int) (w0 * ratio); }
+                  else { h = h0; w = (int) (h0 / ratio); }
+                  setMeasuredDimension(w, h);
+              }
+
+              @Override protected void onDraw(Canvas c) {
+                  int W = getWidth(), H = getHeight();
+                  c.drawColor(0xFF000000);
+                  if (bmp != null) {
+                      c.save();
+                      c.scale(1.06f, 1.06f, W / 2f, H / 2f);
+                      c.drawBitmap(bmp, 0, 0, bp);
+                      c.restore();
+                  } else {
+                      c.drawText("Обери фото", W / 2f, H / 2f, tx);
+                  }
+                  for (int i = 0; i < cs.size(); i++) {
+                      Cfg.C k = cs.get(i);
+                      float cx = k.x * W, cy = k.y * H, r = k.r * W;
+                      pr.setStrokeWidth(3 * dp);
+                      pr.setColor(i == sel ? 0xFF80EBFF : 0xFFFFFFFF);
+                      c.drawCircle(cx, cy, r, pr);
+                      pr.setStrokeWidth(1.5f * dp);
+                      pr.setColor(0x66FFFFFF);
+                      c.drawCircle(cx, cy, r * 2.7f, pr);
+                  }
+              }
+
+              static float cl(float v) { return Math.max(0f, Math.min(1f, v)); }
+
+              @Override public boolean onTouchEvent(MotionEvent e) {
+                  int W = getWidth(), H = getHeight();
+                  float x = cl(e.getX() / W), y = cl(e.getY() / H);
+                  switch (e.getActionMasked()) {
+                      case MotionEvent.ACTION_DOWN:
+                          drag = -1;
+                          pend = false;
+                          for (int i = cs.size() - 1; i >= 0; i--) {
+                              Cfg.C k = cs.get(i);
+                              double d = Math.hypot((x - k.x) * W, (y - k.y) * H);
+                              if (d < k.r * W) { sel = i; drag = i; break; }
+                          }
+                          if (drag < 0) { pend = true; x0 = e.getX(); y0 = e.getY(); }
+                          if (onSel != null) onSel.run();
+                          invalidate();
+                          return true;
+                      case MotionEvent.ACTION_MOVE:
+                          if (drag >= 0) { cs.get(drag).x = x; cs.get(drag).y = y; invalidate(); }
+                          if (pend && Math.hypot(e.getX() - x0, e.getY() - y0) > 10 * dp) pend = false;
+                          return true;
+                      case MotionEvent.ACTION_UP:
+                          if (pend && cs.size() < 8) {
+                              cs.add(new Cfg.C(x, y, defR));
+                              sel = cs.size() - 1;
+                              if (onSel != null) onSel.run();
+                          }
+                          pend = false;
+                          drag = -1;
+                          Cfg.save(getContext(), cs);
+                          invalidate();
+                          return true;
+                      case MotionEvent.ACTION_CANCEL:
+                          pend = false;
+                          drag = -1;
+                          return true;
+                  }
+                  return super.onTouchEvent(e);
+              }
+
+              void deleteSel() {
+                  if (sel >= 0 && sel < cs.size()) { cs.remove(sel); sel = -1; Cfg.save(getContext(), cs); invalidate(); }
+              }
+
+              void clearAll() { cs.clear(); sel = -1; Cfg.save(getContext(), cs); invalidate(); }
+
+              void setR(float r) {
+                  defR = r;
+                  if (sel >= 0 && sel < cs.size()) { cs.get(sel).r = r; Cfg.save(getContext(), cs); }
+                  invalidate();
+              }
+          }
+          EOF
+          mkdir -p app/src/main/java/app/jiggle
+          cat > app/src/main/java/app/jiggle/JiggleService.java <<'EOF'
+          package app.jiggle;
+
+          import android.graphics.Bitmap;
+          import android.graphics.Canvas;
+          import android.graphics.Color;
+          import android.graphics.Paint;
+          import android.graphics.Typeface;
+          import android.hardware.Sensor;
+          import android.hardware.SensorEvent;
+          import android.hardware.SensorEventListener;
+          import android.hardware.SensorManager;
+          import android.content.SharedPreferences;
+          import android.os.Build;
+          import android.service.wallpaper.WallpaperService;
+          import android.view.Choreographer;
+          import android.view.SurfaceHolder;
+          import java.util.ArrayList;
+          import java.util.Date;
+          import java.util.List;
+          import java.util.Locale;
+
+          public class JiggleService extends WallpaperService {
+              static final int MW = 28, MH = 56;
+
+              @Override public Engine onCreateEngine() { return new E(); }
+
+              class E extends Engine implements SensorEventListener, Choreographer.FrameCallback {
+                  SensorManager sm;
+                  Sensor acc;
+                  boolean vis;
+                  int W, H;
+                  Bitmap bmp;
+                  List<Cfg.C> cs = new ArrayList<>();
+                  float k = 1, par = 1;
+                  boolean clk, inv;
+                  final float[] gv = new float[3];
+                  boolean gInit, bInit;
+                  float linx, liny, bx, by;
+                  final float[] ox = new float[8], oy = new float[8], vx = new float[8], vy = new float[8], sq = new float[8];
+                  float px, py;
+                  long lastDraw, tSec;
+                  String tStr = "";
+                  final float[] verts = new float[(MW + 1) * (MH + 1) * 2];
+                  final Paint bp = new Paint(Paint.FILTER_BITMAP_FLAG);
+                  final Paint tp = new Paint(Paint.ANTI_ALIAS_FLAG);
+
+                  @Override public void onCreate(SurfaceHolder h) {
+                      super.onCreate(h);
+                      sm = (SensorManager) getSystemService(SENSOR_SERVICE);
+                      acc = sm.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+                  }
+
+                  void load() {
+                      SharedPreferences sp = Cfg.sp(JiggleService.this);
+                      k = sp.getFloat("k", 1f);
+                      par = sp.getFloat("p", 1f);
+                      clk = sp.getBoolean("clk", false);
+                      inv = sp.getBoolean("inv", false);
+                      cs = Cfg.circles(JiggleService.this);
+                      if (W > 0 && H > 0) {
+                          if (bmp != null) bmp.recycle();
+                          bmp = Cfg.cover(JiggleService.this, W, H);
+                      }
+                  }
+
+                  @Override public void onSurfaceChanged(SurfaceHolder h, int f, int w, int hh) {
+                      super.onSurfaceChanged(h, f, w, hh);
+                      W = w;
+                      H = hh;
+                      load();
+                  }
+
+                  @Override public void onVisibilityChanged(boolean v) {
+                      vis = v;
+                      Choreographer.getInstance().removeFrameCallback(this);
+                      if (v) {
+                          load();
+                          bInit = false;
+                          lastDraw = 0;
+                          if (acc != null) sm.registerListener(this, acc, SensorManager.SENSOR_DELAY_GAME);
+                          Choreographer.getInstance().postFrameCallback(this);
+                      } else {
+                          sm.unregisterListener(this);
+                      }
+                  }
+
+                  @Override public void onDestroy() {
+                      vis = false;
+                      sm.unregisterListener(this);
+                      Choreographer.getInstance().removeFrameCallback(this);
+                      super.onDestroy();
+                  }
+
+                  @Override public void onSensorChanged(SensorEvent e) {
+                      float[] v = e.values;
+                      if (!gInit) { gv[0] = v[0]; gv[1] = v[1]; gv[2] = v[2]; gInit = true; }
+                      for (int i = 0; i < 3; i++) gv[i] = 0.92f * gv[i] + 0.08f * v[i];
+                      linx = v[0] - gv[0];
+                      liny = v[1] - gv[1];
+                  }
+
+                  @Override public void onAccuracyChanged(Sensor s, int a) { }
+
+                  @Override public void doFrame(long ns) {
+                      if (!vis) return;
+                      Choreographer.getInstance().postFrameCallback(this);
+                      if (ns - lastDraw < 18000000L) return;
+                      float dt = lastDraw == 0 ? 0.016f : Math.min(0.033f, (ns - lastDraw) / 1e9f);
+                      lastDraw = ns;
+                      step(dt);
+                      draw();
+                  }
+
+                  void step(float dt) {
+                      float s = inv ? -1f : 1f;
+                      float gdx = Math.max(-1.2f, Math.min(1.2f, -gv[0] / 9.81f));
+                      float gdy = Math.max(-1.2f, Math.min(1.2f, gv[1] / 9.81f));
+                      if (!bInit) { bx = gdx; by = gdy; bInit = true; }
+                      bx += (gdx - bx) * dt * 0.25f;
+                      by += (gdy - by) * dt * 0.25f;
+                      float rx = s * (gdx - bx), ry = s * (gdy - by);
+                      px = Math.max(-0.5f, Math.min(0.5f, rx)) * par * 0.04f * W;
+                      py = Math.max(-0.5f, Math.min(0.5f, ry)) * par * 0.04f * H;
+                      float tgx = rx * 0.05f * k, tgy = ry * 0.05f * k;
+                      float ax = linx * s, ay = -liny * s;
+                      int n = Math.min(cs.size(), 8);
+                      for (int i = 0; i < n; i++) {
+                          float w0 = 9.5f * (1 + 0.06f * i), zt = 0.07f;
+                          vx[i] += (-w0 * w0 * (ox[i] - tgx) - 2 * zt * w0 * vx[i] - 0.03f * k * ax) * dt;
+                          vy[i] += (-w0 * w0 * (oy[i] - tgy) - 2 * zt * w0 * vy[i] - 0.05f * k * ay) * dt;
+                          ox[i] = 0.05f * (float) Math.tanh((ox[i] + vx[i] * dt) / 0.05f);
+                          oy[i] = 0.05f * (float) Math.tanh((oy[i] + vy[i] * dt) / 0.05f);
+                          sq[i] = Math.max(-0.07f, Math.min(0.07f, vy[i] * 0.2f));
+                      }
+                  }
+
+                  void draw() {
+                      SurfaceHolder h = getSurfaceHolder();
+                      Canvas c = null;
+                      try {
+                          c = Build.VERSION.SDK_INT >= 26 ? h.lockHardwareCanvas() : h.lockCanvas();
+                          if (c != null) render(c);
+                      } catch (Exception ex) {
+                      } finally {
+                          if (c != null) {
+                              try { h.unlockCanvasAndPost(c); } catch (Exception ex) { }
+                          }
+                      }
+                  }
+
+                  void render(Canvas c) {
