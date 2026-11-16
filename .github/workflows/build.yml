@@ -8,8 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Відновити папки
-        run: if [ -f setup.sh ]; then bash setup.sh; fi
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
